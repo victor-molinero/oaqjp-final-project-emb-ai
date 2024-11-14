@@ -22,4 +22,4 @@ def emotion_detector(text_to_analyse):
             dominant_value = emotionsList[em_key]
     result["dominant_emotion"] = dominant_emotion 
 
-    return result
+    return json.dumps(result, indent = 4)
